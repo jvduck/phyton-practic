@@ -1,0 +1,25 @@
+{
+    "diffEditor.codeLens": true,
+    "editor.formatOnType": true,
+    "workbench.iconTheme": "vscode-icons",
+    "window.autoDetectColorScheme": false,
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredHighContrastColorTheme": "Kimbie Dark",
+    "workbench.colorTheme": "Monokai Night",
+    "scm.diffDecorationsGutterPattern": {
+        "added": true
+    },
+    "better-comments.highlightPlainText": false,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "vsicons.dontShowConfigManuallyChangedMessage": false,
+    "vsicons.dontShowNewVersionMessage": false,
+    "vsicons.presets.angular": true,
+    "vsicons.presets.foldersAllDefaultIcon": false,
+    "vsicons.presets.hideExplorerArrows": false,
+    "vsicons.presets.jsOfficial": true,
+    "vsicons.presets.jsonOfficial": true,
+    "vsicons.presets.nestjs": true,
+    "vsicons.presets.tsOfficial": true,
+    "vsicons.projectDetection.autoReload": false,
+    "autoDocstring.includeExtendedSummary": true
+}

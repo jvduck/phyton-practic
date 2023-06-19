@@ -50,7 +50,7 @@ print(nombre)
 #    lista_compras.append(articulo)
 
 #! INCLUYAMOSLO DENTRO DE UNA FUNCION
-
+"""""
 
 def compras():
     lista_compras = [] #!CREAR ELEMENTOS DENTRO DE UNA FUNCION
@@ -63,12 +63,12 @@ def compras():
 lunes = compras()
 martes = compras()
 
-print(f"""
+print(f
     Lunes: {lunes}
     Martes: {martes}
-    """)
+    
 
-"""
+
 TODO: vamos a practicar la creacion de elementos en una funcion. Nuestra funcion ejecuta el sig codigo: se le va a pedir al usuario, que indique la cant de alumnos a ingresar. Luego, con un bucle (while/for) vamos a repetir un codigo que va a pedirle al usuario lo siguiente: nombre del alumno y materia. esto, se va a guardar en un DICCIONARIO, bajo las llaves de "Alumno" y "Materia". Ese diccionario, sera devuelto por la funcion, y lo almacenaremos en una variable.
 
 !debemos ejecutar por lo menos 2 veces la funcion, y que los alumnos se guarden distinto
@@ -83,3 +83,20 @@ SALIDA:
 ? 'Alumno 1: {"Nombre":"Seba","Materia","Programacion"}, Alumno 2: {"Nombre":"alejandro","Materia","Geografia"}
 
 """
+
+lista= []
+    
+def registro(): #? REALIZA LA CARGA DE MANERA CORRECTA!!! Carga UN ALUMNO, y lo devuelve
+    datos = {}
+    nombre = input("Ingrese el nombre del alumno: ")
+    materia = input("Ingrese el nombre de la materia: ")
+    datos["Alumno"] = nombre #* SI NO EXISTE, LA LLAVE SE CREA
+    datos.update({"Materia":materia}) #*  SI NO EXISTE, LA LLAVE SE CREA
+    return datos
+
+cant_alumnos = int(input("Ingrese la cantidad de alumnos a cargar: ")) #!verificar el pedido de los INPUT!!!
+for i in range(cant_alumnos):
+    alumno = registro()
+    lista.append(alumno)
+    
+print("Lista de alumnos: ",lista)
