@@ -7,4 +7,6 @@ def verTodo(listado: list):
         else:
             estado = "pendiente"
         print(f'Tarea: {i["Tarea"]}, Estado: {estado}')
-        
+
+listado = (sarasas)        
+verTodo()

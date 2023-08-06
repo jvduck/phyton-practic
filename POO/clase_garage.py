@@ -1,4 +1,4 @@
-from claseAuto import Automovil
+from clase_automovil import Automovil
 
 #Almacenar mis objetos en un Garage. Va a ser una clase denominada Garaje, la cual, va a almacenar objetos de la clase Automovil
 
