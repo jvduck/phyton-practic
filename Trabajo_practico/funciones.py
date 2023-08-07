@@ -1,8 +1,8 @@
-from Veterinaria import Paciente
+from Veterinary import Paciente
 
 def nuevoPaciente():
-    new_pet = Paciente()
-    return new_pet
+    paciente = Paciente()
+    return paciente
 
 def deletePaciente(paciente):
     for i in range (len(paciente[i])):
@@ -10,13 +10,17 @@ def deletePaciente(paciente):
         print (f'Se elimino {paciente}')
         break
 
-def listarPaciente(paciente):
-    for i in paciente:
-        print(f'pacientes: {i}')
+def listarPaciente(Veterinaria):
+    pacientes = Veterinaria.getListado()
+    if not pacientes:
+        print("no hay pacientes registrados aún")
+    else:
+        for paciente in pacientes:
+            print(paciente)
 
 def nuevaConsulta(paciente, consulta):
-    paciente.consulta.append(consulta)
+    paciente.setConsulta(consulta)
     
 
 def obtenerDetallePaciente(paciente, consulta):
-    print(f'El paciente {paciente.getDatos} tiene {len(consulta)} consultas')
+    return print(f'El paciente {paciente.getDatos} tiene {len(consulta)} consultas')
